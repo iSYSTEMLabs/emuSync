@@ -1,0 +1,6 @@
+---
+execution:
+  - workspaceID: '*'
+    operations: launch, attach, download
+  - workspaceID: 'ws1'
+    operations: launch, attach, download, run

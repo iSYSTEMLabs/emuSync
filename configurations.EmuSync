@@ -1,0 +1,40 @@
+configuration:
+- opMode: slave
+  wsPath: 
+- opMode: master
+  wsPath: 
+logging:
+  enable: False
+module:
+  onDownload:
+    hookPath: emuSyncHooks.py
+    hookStart: onDownloadHook
+    isActive: False
+  onReset:
+    hookPath: emuSyncHooks.py
+    hookStart: onResetHook
+    isActive: False
+  onRun:
+    hookPath: emuSyncHooks.py
+    hookStart: onRunHook
+    isActive: False
+  onStop:
+    hookPath: emuSyncHooks.py
+    hookStart: onStopHook
+    isActive: False
+  preDownload:
+    hookPath: emuSyncHooks.py
+    hookStart: preDownloadHook
+    isActive: False
+  preReset:
+    hookPath: emuSyncHooks.py
+    hookStart: preResetHook
+    isActive: False
+  preRun:
+    hookPath: emuSyncHooks.py
+    hookStart: preRunHook
+    isActive: False
+  preStop:
+    hookPath: emuSyncHooks.py
+    hookStart: preStopHook
+    isActive: False

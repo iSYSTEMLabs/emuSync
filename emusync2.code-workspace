@@ -1,0 +1,62 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"ms-python.python",
+			"fantasytyx.tortoise-svn",
+			"streetsidesoftware.code-spell-checker",
+			"coenraads.bracket-pair-colorizer-2"
+		]
+	},
+	"settings": {
+		"python.defaultInterpreterPath": "python.exe",
+		"python.formatting.autopep8Args": [ //autoformatting: https://pypi.org/project/autopep8/#more-advanced-usage
+			"--max-line-length",
+			"150",
+			"--experimental",
+			"--ignore",
+			"E402,W690" // do not sort imports, do not fix various deprecated code
+		],
+		// editor settings
+		"editor.wordWrap": "on",
+		"[python]": { // python specific editor settings
+			"editor.formatOnSave": true,
+			"editor.rulers": [
+				100,
+				150
+			],
+		},
+		"editor.rulers": [ // other file types editor specific settings
+			100
+		],
+		// file explorer settings
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.pytest_cache": true,
+			"**/__pycache__": true
+		},
+		// spell checker settings
+		"cSpell.words": [
+			"isyslibpath",
+			"isystem",
+			"isys",
+			"xjrf",
+			"xtrf",
+			"xqrf",
+			"iconnect",
+			"temp",
+			"psutil",
+			"isabs",
+			"popen",
+			"asyst",
+			"robocopy",
+			"pytest",
+		],
+		// other settings
+	}
+}
